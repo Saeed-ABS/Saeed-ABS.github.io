@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: space-grotesk;
+        src: url(/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: space-grotesk;
+      }
+      body {
+        background: linear-gradient(135deg, #111827, #0b0b12);
+        margin: 50px 80px 40px;
+      }
+      h1 {
+        font-size: 87px;
+        color: #f4f4f5;
+      }
+      .cards {
+        margin-top: 130px;
+        display: flex;
+        gap: 20px;
+      }
+      .card {
+        width: 630px;
+        height: 360px;
+        display: flex;
+        background: #111827;
+        border-radius: 50px;
+        overflow: hidden;
+      }
+      img {
+        object-fit: cover;
+        display: block;
+        width: 253px;
+        height: 360px;
+        gap: 71px;
+      }
+      .texts {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #f4f4f5;
+      }
+      h2 {
+        font-size: 30px;
+        font-weight: 300;
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: 300;
+        padding-top: 50px;
+      }
+      .texts > p {
+        font-size: 16px;
+        font-weight: 200;
+        padding-left: 15px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        width: 100px;
+        height: 64px;
+        border-radius: 30px;
+        border: none;
+        background: #38bdf8;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      button:hover{
+        box-shadow: #22d3ee 0 0 20px;
+      }
+      a:link,
+      a:visited{
+        color: #0b0b12;
+        text-decoration: none;
+      }
+      @media screen and (max-width: 1024px){
+        .cards{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+        }
+      }
+      @media screen and (max-width: 767px){
+        body{
+            margin:30px 40px;
+        }
+        .card{
+            gap: 30px;
+            width: 320px;
+            height: 182px;
+            border-radius: 25px;
+        }
+        img{
+            width: 128px;
+            height: 182px;
+            object-fit: cover;
+        }
+        h1{
+            font-size: 46px;
+        }
+        h2{
+            font-size: 18px;
+        }
+        h3{
+            font-size: 18px;
+            padding-top: 20px;
+        }
+        button{
+            width: 60px;
+            height: 30px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Front-End Development</h1>
+      <button>
+        <a href="/index.html#Offer">Back</a>
+      </button>
+    </header>
+    <div class="cards">
+      <div class="card">
+        <img src="/images/Webdesign.png" alt="" />
+        <div class="texts">
+          <h2>Web Resume</h2>
+          <h3>Tools Used:</h3>
+          <p>Html, Css</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
