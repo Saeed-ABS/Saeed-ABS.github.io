@@ -567,22 +567,24 @@ label {
   .skills-container {
     grid-template-columns: 1fr;
     row-gap: 30px;
+    width: 430px;
+    margin: 0 auto;
   }
 
   .skill-group {
     width: 100%;
     height: auto;
-    padding: 30px;
+    /* padding: 30px; */
   }
 
   .skill {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 
   .circle {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 
   .offer {
@@ -704,10 +706,16 @@ label {
     height: auto;
     padding: 40px 0;
   }
-
   .skill {
     width: 120px;
     height: 120px;
+  }
+  .skill-group {
+    width: 330px;
+    /* height: 310px; */
+  }
+  .skills-grid1 {
+    gap: 30px;
   }
 
   .circle {
@@ -777,7 +785,7 @@ label {
     width: 20px;
     height: 20px;
   }
-  #email{
+  #email {
     margin-top: 0px;
   }
 }
