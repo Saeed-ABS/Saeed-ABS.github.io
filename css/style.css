@@ -58,6 +58,18 @@ header {
   border-right: #282e3b solid 1px;
   border-left: #282e3b solid 1px;
 }
+.menu .item {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 1rem;
+}
+
+.menu .item:first-child {
+  border-left: none;
+}
+
+.menu .item:last-child {
+  border-right: none;
+}
 .menu .item a:link,
 .banners .item a:link,
 .menu .item a:visited,
@@ -706,18 +718,27 @@ label {
     height: auto;
     padding: 40px 0;
   }
+  .skills-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .skill {
     width: 120px;
     height: 120px;
   }
   .skill-group {
-    width: 330px;
+    width: 310px;
     /* height: 310px; */
+    border-radius: 78px;
   }
   .skills-grid1 {
-    gap: 30px;
+    gap: 10px;
   }
-
+  .skills-grid2-1{
+    column-gap: 28px;
+  }
   .circle {
     width: 120px;
     height: 120px;
