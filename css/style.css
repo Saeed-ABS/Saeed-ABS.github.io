@@ -768,13 +768,16 @@ label {
   }
 
   .footer button {
-    width: 100px;
-    height: 30px;
-    font-size: 12px;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
   }
 
   .socials i {
     width: 20px;
     height: 20px;
+  }
+  #email{
+    margin-top: 0px;
   }
 }
