@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saeed Abbaszadeh - resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <header>
       <div class="menu">
@@ -117,25 +121,25 @@
           <p>
             Visually striking posters tailored to your brand, event, or message.
           </p>
-          <button><a href="/poster.html">See More...</a></button>
+          <button><a href="/poster.html">Preview</a></button>
         </div>
         <div class="item">
           <img src="/images/packaging.png" alt="" />
           <h3>Packaging</h3>
           <p>Creative and functional packaging that stands out on any shelf.</p>
-          <button><a href="/packaging.html">See More...</a></button>
+          <button><a href="/packaging.html">Preview</a></button>
         </div>
         <div class="item">
           <img src="/images/Billboard.png" alt="" />
           <h3>Billboards</h3>
           <p>Bold billboard designs made to capture attention in seconds.</p>
-          <button><a href="/billboard.html">See More...</a></button>
+          <button><a href="/billboard.html">Preview</a></button>
         </div>
         <div class="item">
           <img src="/images/branding.png" alt="" />
           <h3>Branding</h3>
           <p>Complete brand identity - from logo to visual language.</p>
-          <button><a href="/branding.html">See More...</a></button>
+          <button><a href="/branding.html">Preview</a></button>
         </div>
         <div class="item">
           <img src="/images/Website.png" alt="" />
@@ -143,39 +147,58 @@
           <p>
             User-focused UI/UX for websites and mobile apps, crafted in figma
           </p>
-          <button><a href="/web-design.html">See More...</a></button>
+          <button><a href="/web-design.html">Preview</a></button>
         </div>
         <div class="item">
           <img src="/images/Coding.png" alt="" />
           <h3>Frontend Development</h3>
           <p>Pixel-perfect, responsive websites built with modern code.</p>
-          <button><a href="/coding.html">See More...</a></button>
+          <button><a href="/coding.html">Preview</a></button>
         </div>
       </div>
     </section>
     <section class="reach" id="Reach">
       <h1>Reach Out!</h1>
-      <form>
-        <div class="left">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" />
-          <label for="email" id="email">Your Email:</label>
-          <input type="email" />
+      <form
+        action="https://formsubmit.co/saeedabbaszadeh77124@gmail.com"
+        method="POST"
+        class="contact-form"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="form-columns">
+          <div class="left">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email" id="email">Your Email:</label>
+            <input type="email" name="email" required />
+          </div>
+
+          <div class="right">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
         </div>
-        <div class="right">
-          <label for="text">Your Message</label>
-          <textarea name="text"></textarea>
-        </div>
+        <button type="submit">SUBMIT</button>
       </form>
-      <button>SUBMIT</button>
     </section>
     <div class="footer">
-      <button>Contact Me</button>
+      <a href="tel:+00989371552710">
+        <button>Contact Me</button>
+      </a>
       <div class="socials">
-        <a href=""><img src="/images/Gmail logo.png" alt="" /></a>
-        <a href=""><img src="/images/telegram logo.png" alt="" /></a>
-        <a href=""><img src="/images/github logo.png" alt="" /></a>
-        <a href=""><img src="/images/linkedin logo.png" alt="" /></a>
+        <a href="mailto:saeedabbaszadeh77124@gmail.com"
+          ><i class="fa fa-envelope-o" aria-hidden="true"></i
+        ></a>
+        <a href="https://t.me/sabs_81"
+          ><i class="fa fa-telegram" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/Saeed-ABS"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+        <a href="www.linkedin.com/in/saeed-abbaszadeh-7b7b48375"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
       </div>
     </div>
   </body>

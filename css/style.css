@@ -178,7 +178,6 @@ header {
   grid-template-columns: auto;
   justify-items: center;
   row-gap: 40px;
-  
 }
 .skills-grid2-1 {
   display: grid;
@@ -364,10 +363,10 @@ textarea:focus {
   box-shadow: 0 0 7px #22d3ee;
 }
 label {
-  font-size: 20px;
+  font-size: 24px;
 }
 #email {
-  margin-top: 72px;
+  margin-top: 28px;
 }
 .reach button {
   margin-left: 35%;
@@ -410,11 +409,75 @@ label {
   cursor: pointer;
   pointer-events: auto;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Align left and right side by side */
+.form-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.form-columns .left,
+.form-columns .right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Button centered below */
+.contact-form button[type="submit"] {
+  align-self: center;
+  margin-top: 1rem;
+}
+.contact-form label {
+  color: #f4f4f5;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .socials {
   display: flex;
   flex-direction: column;
   gap: 12px;
   pointer-events: auto;
+}
+.socials i {
+  font-size: 36px;
+  color: white;
+}
+.socials a:nth-child(1) i:hover {
+  color: red;
+  text-shadow: 0 0 15px red;
+  transition: color 0.3s ease;
+}
+.socials a:nth-child(2) i:hover {
+  color: #0088cc;
+  text-shadow: 0 0 15px #0088cc;
+  transition: color 0.3s ease;
+}
+.socials a:nth-child(3) i:hover {
+  color: #6e5494;
+  text-shadow: 0 0 15px #6e5494;
+  transition: color 0.3s ease;
+}
+.socials a:nth-child(4) i:hover {
+  color: #0077b5;
+  text-shadow: 0 0 15px #0077b5;
+  transition: color 0.3s ease;
 }
 @media screen and (max-width: 1024px) {
   header {
@@ -423,7 +486,6 @@ label {
 
   .menu {
     flex-wrap: wrap;
-  
   }
 
   .menu .item {
@@ -711,7 +773,7 @@ label {
     font-size: 12px;
   }
 
-  .socials img {
+  .socials i {
     width: 20px;
     height: 20px;
   }
